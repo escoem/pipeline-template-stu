@@ -1,1 +1,12 @@
-echo "mavenJavaPipeline"
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh """
+          echo 'MavenJavaPipeline'
+        """
+      }
+    }
+  }
+}
